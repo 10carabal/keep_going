@@ -1,0 +1,120 @@
+h1 {
+    font-weight: bold;
+    color: #7a7a7a;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+h3 {
+    color: #c0c0c0;
+}
+
+.destacado {
+    background-color: tomato;
+    border: 3px solid red;
+}
+
+#principal {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#app {
+    font-family: sans-serif;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 800px;
+}
+
+.green {
+    color: seagreen;
+}
+
+.red {
+    color: tomato;
+}
+
+.orange {
+    color: orange;
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* img {
+    height: 64px;
+    width: 64px;
+} */
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li:first-child {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+li {
+    font-size: 20px;
+}
+
+button {
+    padding: 10px;
+}
+
+.row {
+    justify-content: space-around;
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+span {
+    cursor: pointer;
+}
+
+main {
+    background-color: #f9f588;
+}
+
+.novedad {
+    font-weight: bold;
+}
+
+footer nav.css {
+    text-decoration: underline wavy;
+}
+
+#message p.once.final {
+    font-weight: bold;
+    color: #56329a;
+    font-size: 22px;
+    font-family: Georgia;
+}
+
+a:not(.destacado) {
+    background-color: #ff80ff
+}
+
+h1::first-letter {
+    color: red
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+li::before {
+    content: "🍕";
+}
+
+h1::after {
+    content: "🥥";
+}

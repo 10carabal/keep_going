@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <title>Vue,HTML5,JS,CSS🤯</title>
+</head>
+
+<body>
+    <main>
+        <!-- Control absoluto de Vue en este div -->
+        <div id="myApp">
+            <!-- vue -->
+            <img v-on:mouseover="toggleShowPrices" v-on:mouseout="toggleShowPrices" :src="img" :alt="name" />
+            <h4 :class="changePercent > 0 ? 'green' : 'red'">
+                {{ title }}
+                <span v-if="changePercent > 0">👍</span>
+                <span v-else-if="changePercent < 0">👎</span>
+                <span v-else>🤞</span>
+                <span v-on:click="toggleShowPrices">
+                    {{ showPrices ? '🐵':'🙈'}}</span>
+            </h4>
+            <!-- <ul>
+                    <li v-for="(p,i) in prices" :key="p">{{ i+1 }}-{{ p }}</li>
+                </ul> -->
+
+            <input type="number" v-model="value" />
+            <br />
+            <span>{{ convertedValue }}</span>
+
+            <ol v-show="showPrices" :style="{ background: '#' + color }">
+                <li :class="{ orange: p.value == price, red: p.value < price, green: p.value > price}" v-for="(p,i) in pricesWithDays" :key="p.day">
+                    {{ p.day }} ({{ p.value }})
+                </li>
+            </ol>
+
+            <span id="message">
+                <p class="once final">Porque Shi</p>
+            </span>
+            <!-- vue -->
+            <header>
+                <h1>This is a title😍</h1>
+                <h3>this is a subtitle, you can change</h3>
+            </header>
+            <p id="principal">Things I want learn:</p>
+            <ul>
+                <li>HTML.</li>
+                <li>CSS.</li>
+                <li>JavaScript.</li>
+                <li>Vue.</li>
+            </ul>
+            <p class="destacado">how to create a html document:</p>
+            <ol>
+                <li class="novedad">Start with Visual Studio Code</li>
+                <li>Create a new document.</li>
+                <li class="novedad">Save as html</li>
+            </ol>
+
+            <a href="#" class="destacado">1</a><a href="#" class="destacado">2</a><a href="#">3</a>
+            <hr>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> veritatis itaque illo ut labore, quasi omnis asperiores sint, perferendis <br>nobis incidunt ea voluptatibus commodi ab in cum veniam maxime optio.</p>
+
+            <a href="https://stackoverflow.com/" target="_blank">Realiza una pregunta</a>
+
+    </main>
+    <!-- <footer>
+        <a href="secciones/galeria/galeria.html">Galeria</a>
+    </footer> -->
+    <footer>
+        <nav class="css"><a href="#">Css</a></nav>
+        <a href="secciones/galeria/galeria.html">Galeria</a>
+    </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
